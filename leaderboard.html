@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard — DMI</title>
+  <meta name="description" content="Live leaderboard — DevOps Micro Internship by Pravin Mishra" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">DMI</div>
+    <div>
+      <div class="logo-text">DevOps Micro Internship</div>
+      <div class="logo-sub">by Pravin Mishra</div>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="champion.html">Champion</a></li>
+    <li><a href="leaderboard.html" class="active">Leaderboard</a></li>
+    <li><a href="graduates.html">Graduates</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section class="leaderboard-section" style="padding: 4rem 2rem 5rem;">
+  <div class="container">
+
+    <div class="section-label">Cohort 2 · Live</div>
+    <h2 class="section-title">Leaderboard</h2>
+    <p class="section-sub">Updated after each Saturday session. Scores reflect assignments, LinkedIn posts, and blog contributions.</p>
+
+    <!-- Score breakdown info -->
+    <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;font-size:0.8rem;text-align:center;">
+        <div style="color:var(--accent);font-weight:700;">10 pts</div>
+        <div style="color:var(--text-muted);">Per Attendance</div>
+        <div style="color:var(--text-muted);font-size:0.7rem;">Morning · Mid · Evening</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;font-size:0.8rem;text-align:center;">
+        <div style="color:var(--accent);font-weight:700;">20 pts</div>
+        <div style="color:var(--text-muted);">Per Assignment</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;font-size:0.8rem;text-align:center;">
+        <div style="color:var(--accent);font-weight:700;">10 pts</div>
+        <div style="color:var(--text-muted);">Per LinkedIn Post</div>
+        <div style="color:var(--text-muted);font-size:0.7rem;">Profile linked in table</div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:10px 18px;font-size:0.8rem;text-align:center;">
+        <div style="color:var(--accent);font-weight:700;">30 pts</div>
+        <div style="color:var(--text-muted);">Blog (optional)</div>
+        <div style="color:var(--text-muted);font-size:0.7rem;">Link in table</div>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="lb-filters">
+      <button class="lb-filter-btn active" data-group="all">All Groups</button>
+      <button class="lb-filter-btn" data-group="1">Group 1</button>
+      <button class="lb-filter-btn" data-group="2">Group 2</button>
+      <button class="lb-filter-btn" data-group="3">Group 3</button>
+      <button class="lb-filter-btn" data-group="4">Group 4</button>
+      <button class="lb-filter-btn" data-group="5">Group 5</button>
+      <button class="lb-filter-btn" data-group="6">Group 6</button>
+    </div>
+
+    <!-- Search -->
+    <div style="display:flex;justify-content:center;margin-bottom:2rem;">
+      <input id="lbSearch" type="text" placeholder="Search by name…"
+        style="background:var(--bg-card);border:1px solid var(--border);border-radius:100px;padding:10px 20px;color:var(--text);font-size:0.875rem;width:100%;max-width:340px;outline:none;transition:border-color 0.2s;"
+        onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+    </div>
+
+    <!-- Table -->
+    <div id="lbLoading" class="lb-loading">
+      <div class="lb-spinner"></div>
+      Loading leaderboard…
+    </div>
+
+    <div id="lbContent" style="display:none;">
+      <div class="lb-table-wrap">
+        <table class="lb-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Student</th>
+              <th>Group</th>
+              <th>LinkedIn</th>
+              <th>Blog</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="lbBody"></tbody>
+        </table>
+      </div>
+      <div id="lbEmpty" class="lb-empty" style="display:none;">No students found.</div>
+      <p style="text-align:center;color:var(--text-muted);font-size:0.75rem;margin-top:1.5rem;" id="lbTimestamp"></p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">
+    <div class="logo-icon">DMI</div>
+    <span style="color:var(--text);font-weight:700;font-size:0.95rem;">DevOps Micro Internship</span>
+  </a>
+  <p>by <a href="https://pravinmishra.com" target="_blank">Pravin Mishra</a> &amp; <a href="https://thecloudadvisory.com" target="_blank">The CloudAdvisory</a></p>
+  <p style="margin-top:1rem; font-size:0.75rem;">&copy; 2026 DevOps Micro Internship. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  // ── CONFIG ──────────────────────────────────────────────────────────────────
+  // Replace with your actual published Google Sheet CSV URL.
+  // In Google Sheets: File → Share → Publish to web → CSV → copy URL
+  const SHEET_CSV_URL = 'data/leaderboard.csv';
+  // ────────────────────────────────────────────────────────────────────────────
+
+  let allStudents = [];
+  let activeGroup = 'all';
+  let searchQuery = '';
+
+  function parseCSV(text) {
+    const lines = text.trim().split('\n');
+    const rawHeaders = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, '').toLowerCase());
+    return lines.slice(1).map(line => {
+      const vals = line.match(/(".*?"|[^,\r\n]+)/g) || line.split(',');
+      const obj = {};
+      rawHeaders.forEach((h, i) => {
+        obj[h] = (vals[i] || '').replace(/^"|"$/g, '').trim();
+      });
+      // normalise group: "DMI Cohort 2 Group #3" → "3"
+      if (obj.group) {
+        const m = obj.group.match(/#(\d+)/);
+        if (m) obj.group = m[1];
+      }
+      // normalise total: remove commas "2,201" → 2201
+      if (obj.total) obj.total = obj.total.replace(/,/g, '');
+      return obj;
+    }).filter(r => (r.name || r.Name || '').length > 0);
+  }
+
+  function calcTotal(s) {
+    // CSV may have a pre-computed Total column, or separate breakdown columns
+    if (s.total) return parseInt(s.total) || 0;
+    return (parseInt(s.attendance) || 0) +
+           (parseInt(s.assignments) || 0) +
+           (parseInt(s.linkedin) || 0) +
+           (parseInt(s.blog) || 0);
+  }
+
+  function rankClass(rank) {
+    if (rank === 1) return 'rank-badge rank-1';
+    if (rank === 2) return 'rank-badge rank-2';
+    if (rank === 3) return 'rank-badge rank-3';
+    return 'rank-badge rank-other';
+  }
+
+  function render() {
+    let data = [...allStudents];
+    if (activeGroup !== 'all') {
+      data = data.filter(s => String(s.group) === String(activeGroup));
+    }
+    if (searchQuery) {
+      data = data.filter(s => s.name.toLowerCase().includes(searchQuery));
+    }
+
+    data.sort((a, b) => calcTotal(b) - calcTotal(a));
+
+    const tbody = document.getElementById('lbBody');
+    const empty = document.getElementById('lbEmpty');
+
+    if (data.length === 0) {
+      tbody.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+
+    empty.style.display = 'none';
+    tbody.innerHTML = data.map((s, i) => {
+      const total = calcTotal(s);
+      const rank = i + 1;
+      return `
+        <tr>
+          <td><div class="${rankClass(rank)}">${rank}</div></td>
+          <td><div class="student-name">${escHtml(s.name)}</div></td>
+          <td><span class="group-pill">Group ${escHtml(s.group)}</span></td>
+          <td>${s.linkedin ? `<a href="${escHtml(s.linkedin)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-size:0.82rem;">View →</a>` : '—'}</td>
+          <td>${s.blog ? `<a href="${escHtml(s.blog)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;font-size:0.82rem;">Read →</a>` : '—'}</td>
+          <td><span class="total-marks">${total}</span></td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // Load data
+  fetch(SHEET_CSV_URL + '?t=' + Date.now())
+    .then(r => r.text())
+    .then(text => {
+      allStudents = parseCSV(text);
+      document.getElementById('lbLoading').style.display = 'none';
+      document.getElementById('lbContent').style.display = 'block';
+      document.getElementById('lbTimestamp').textContent = 'Last updated: ' + new Date().toLocaleString();
+      render();
+    })
+    .catch(() => {
+      document.getElementById('lbLoading').innerHTML =
+        '<p style="color:var(--text-muted)">Leaderboard data not available yet. Check back after the first session!</p>';
+    });
+
+  // Group filter
+  document.querySelectorAll('.lb-filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lb-filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeGroup = btn.dataset.group;
+      render();
+    });
+  });
+
+  // Search
+  document.getElementById('lbSearch').addEventListener('input', e => {
+    searchQuery = e.target.value.toLowerCase().trim();
+    render();
+  });
+</script>
+</body>
+</html>

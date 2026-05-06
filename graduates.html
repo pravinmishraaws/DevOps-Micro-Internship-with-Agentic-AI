@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduates — DMI</title>
+  <meta name="description" content="Graduated students — DevOps Micro Internship by Pravin Mishra" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .grad-card {
+      background: var(--bg-card2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .grad-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+    .grad-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .grad-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .grad-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.2rem; }
+    .grad-role { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.5rem; line-height: 1.4; }
+    .grad-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.6rem;
+    }
+    .grad-country {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .grad-group-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 2px 8px;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+    }
+    .grad-badge {
+      display: inline-block;
+      background: rgba(245,197,24,0.1);
+      border: 1px solid rgba(245,197,24,0.3);
+      color: var(--accent);
+      border-radius: 100px;
+      padding: 2px 10px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .grad-linkedin {
+      color: var(--accent);
+      font-size: 0.75rem;
+      text-decoration: none;
+      border: 1px solid rgba(245,197,24,0.3);
+      border-radius: 100px;
+      padding: 3px 12px;
+      transition: background 0.2s;
+    }
+    .grad-linkedin:hover { background: rgba(245,197,24,0.1); }
+
+    .graduates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 1rem;
+    }
+
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background: var(--bg-card2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .stats-bar .stat .num { font-size: 1.5rem; }
+
+    .country-flags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .country-chip {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .country-chip:hover, .country-chip.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">DMI</div>
+    <div>
+      <div class="logo-text">DevOps Micro Internship</div>
+      <div class="logo-sub">by Pravin Mishra</div>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="champion.html">Champion</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="graduates.html" class="active">Graduates</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section style="padding: 4rem 2rem 5rem; background: var(--bg-card); border-bottom: 1px solid var(--border);">
+  <div class="container">
+
+    <div class="section-label">Alumni</div>
+    <h2 class="section-title">🎓 Graduated Students</h2>
+    <p class="section-sub">Proud alumni who completed the full 14-week DevOps Micro Internship program and are now working in cloud & DevOps roles worldwide.</p>
+
+    <!-- Cohort Tabs -->
+    <div class="cohort-tabs">
+      <button class="cohort-tab active" data-cohort="1">Cohort 1</button>
+      <!-- Cohort 2 tab will appear here after they graduate -->
+    </div>
+
+    <!-- Stats bar -->
+    <div class="stats-bar" id="statsBar">
+      <div class="stat"><span class="num" id="statTotal">—</span><span class="label">Graduates</span></div>
+      <div class="stat"><span class="num" id="statCountries">—</span><span class="label">Countries Represented</span></div>
+      <div class="stat"><span class="num">✓</span><span class="label">Certified by DMI</span></div>
+      <div class="stat" id="statTopWrap" style="display:none;"><span class="num" id="statTop" style="font-size:1rem;">—</span><span class="label">Top Scorer</span></div>
+    </div>
+
+    <!-- Country filter chips -->
+    <div class="country-flags" id="countryChips"></div>
+
+    <!-- Search -->
+    <div style="display:flex;justify-content:center;margin-bottom:1.5rem;">
+      <input id="gradSearch" type="text" placeholder="Search by name…"
+        style="background:var(--bg-card2);border:1px solid var(--border);border-radius:100px;padding:10px 20px;color:var(--text);font-size:0.875rem;width:100%;max-width:380px;outline:none;transition:border-color 0.2s;"
+        onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+    </div>
+
+    <!-- Result count -->
+    <p id="gradCount" style="text-align:center;color:var(--text-muted);font-size:0.82rem;margin-bottom:1rem;"></p>
+
+    <!-- Grid -->
+    <div class="graduates-grid" id="graduatesGrid">
+      <div style="color:var(--text-muted);font-size:0.9rem;padding:2rem 0;grid-column:1/-1;text-align:center;">
+        <div class="lb-spinner" style="margin:0 auto 1rem;"></div>
+        Loading graduates…
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="gradPagination" style="display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap;margin-top:2rem;"></div>
+
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="footer-logo">
+    <div class="logo-icon">DMI</div>
+    <span style="color:var(--text);font-weight:700;font-size:0.95rem;">DevOps Micro Internship</span>
+  </a>
+  <p>by <a href="https://pravinmishra.com" target="_blank">Pravin Mishra</a> &amp; <a href="https://thecloudadvisory.com" target="_blank">The CloudAdvisory</a></p>
+  <p style="margin-top:1rem; font-size:0.75rem;">&copy; 2026 DevOps Micro Internship. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+  const COUNTRY_FLAGS = {
+    'India': '🇮🇳', 'Nigeria': '🇳🇬', 'Australia': '🇦🇺', 'Nepal': '🇳🇵',
+    'Sri Lanka': '🇱🇰', 'Bangladesh': '🇧🇩', 'Germany': '🇩🇪', 'Austria': '🇦🇹',
+    'UK': '🇬🇧', 'Sweden': '🇸🇪', 'Finland': '🇫🇮', 'USA': '🇺🇸',
+    'Canada': '🇨🇦', 'Kenya': '🇰🇪', 'Ghana': '🇬🇭', 'Pakistan': '🇵🇰',
+    'Philippines': '🇵🇭', 'Uganda': '🇺🇬', 'Tanzania': '🇹🇿'
+  };
+
+  function flag(country) {
+    return COUNTRY_FLAGS[country] || '🌍';
+  }
+
+  function initials(name) {
+    return name.split(' ').map(w => w[0]).slice(0, 2).join('').toUpperCase();
+  }
+
+  function escHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  let allGrads = { 1: [], 2: [] };
+  let activeCohort = 1;
+  let gradSearch = '';
+  let activeCountry = 'all';
+  let activeGroup = 'all';
+  let currentPage = 1;
+  const PAGE_SIZE = 48;
+
+  function updateStats(data) {
+    const countries = new Set(data.map(g => g.country).filter(Boolean));
+    document.getElementById('statTotal').textContent = data.length;
+    document.getElementById('statCountries').textContent = countries.size || '—';
+    const top = data.filter(g => g.total).sort((a,b) => b.total - a.total)[0];
+    const topWrap = document.getElementById('statTopWrap');
+    if (top) {
+      document.getElementById('statTop').textContent = top.name.split(' ')[0] + ' · ' + top.total.toLocaleString();
+      topWrap.style.display = '';
+    } else {
+      topWrap.style.display = 'none';
+    }
+  }
+
+  function buildCountryChips(data) {
+    const countries = [...new Set(data.map(g => g.country).filter(Boolean))].sort();
+    const container = document.getElementById('countryChips');
+    container.innerHTML = `<span class="country-chip active" data-country="all">🌍 All Countries</span>` +
+      countries.map(c => `<span class="country-chip" data-country="${escHtml(c)}">${flag(c)} ${escHtml(c)}</span>`).join('');
+
+    container.querySelectorAll('.country-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        container.querySelectorAll('.country-chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        activeCountry = chip.dataset.country;
+        renderGrads();
+      });
+    });
+  }
+
+  function renderGrads() {
+    let data = allGrads[activeCohort] || [];
+
+    if (activeGroup !== 'all') data = data.filter(g => String(g.group) === activeGroup);
+    if (activeCountry !== 'all') data = data.filter(g => g.country === activeCountry);
+    if (gradSearch) data = data.filter(g => g.name.toLowerCase().includes(gradSearch));
+
+    const total = data.length;
+    const totalPages = Math.ceil(total / PAGE_SIZE);
+    if (currentPage > totalPages) currentPage = 1;
+
+    const paged = data.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+
+    document.getElementById('gradCount').textContent =
+      total > 0 ? `Showing ${paged.length} of ${total} graduates` : '';
+
+    const grid = document.getElementById('graduatesGrid');
+
+    if (total === 0) {
+      grid.innerHTML = `<div style="color:var(--text-muted);font-size:0.9rem;padding:2rem 0;grid-column:1/-1;text-align:center;">
+        ${allGrads[activeCohort].length === 0 ? 'No graduates added yet for this cohort.' : 'No results found.'}
+      </div>`;
+      document.getElementById('gradPagination').innerHTML = '';
+      return;
+    }
+
+    grid.innerHTML = paged.map(g => `
+      <div class="grad-card">
+        <div class="grad-avatar">
+          ${g.photo ? `<img src="${escHtml(g.photo)}" alt="${escHtml(g.name)}">` : initials(g.name)}
+        </div>
+        <div class="grad-name">${escHtml(g.name)}</div>
+        <div class="grad-role">${escHtml(g.role || 'Cloud & DevOps Engineer')}</div>
+        <div class="grad-meta">
+          ${g.country ? `<span class="grad-country">${flag(g.country)} ${escHtml(g.country)}</span>` : ''}
+        </div>
+        ${g.total ? `<div style="color:var(--accent);font-weight:700;font-size:0.85rem;margin-bottom:0.4rem;">${g.total.toLocaleString()} pts</div>` : ''}
+        <span class="grad-badge">✓ Graduated</span>
+        ${g.linkedin ? `<a href="${escHtml(g.linkedin)}" target="_blank" rel="noopener" class="grad-linkedin">LinkedIn →</a>` : ''}
+      </div>
+    `).join('');
+
+    // Pagination buttons
+    const pg = document.getElementById('gradPagination');
+    if (totalPages <= 1) { pg.innerHTML = ''; return; }
+    pg.innerHTML = Array.from({length: totalPages}, (_, i) => i + 1).map(p => `
+      <button onclick="goPage(${p})" style="
+        background:${p === currentPage ? 'var(--accent)' : 'var(--bg-card)'};
+        color:${p === currentPage ? '#0d0d0d' : 'var(--text-muted)'};
+        border:1px solid ${p === currentPage ? 'var(--accent)' : 'var(--border)'};
+        border-radius:8px;padding:6px 14px;font-size:0.82rem;cursor:pointer;font-weight:${p === currentPage ? '700' : '400'};">
+        ${p}
+      </button>`).join('');
+  }
+
+  function goPage(p) {
+    currentPage = p;
+    renderGrads();
+    document.getElementById('graduatesGrid').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  Promise.all([
+    fetch('data/cohort1.json').then(r => r.json()).catch(() => []),
+    fetch('data/cohort2.json').then(r => r.json()).catch(() => [])
+  ]).then(([c1, c2]) => {
+    allGrads[1] = c1;
+    allGrads[2] = c2;
+    updateStats(c1);
+    buildCountryChips(c1);
+    renderGrads();
+  });
+
+  document.querySelectorAll('.cohort-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.cohort-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      activeCohort = parseInt(tab.dataset.cohort);
+      gradSearch = ''; activeCountry = 'all'; activeGroup = 'all'; currentPage = 1;
+      document.getElementById('gradSearch').value = '';
+      updateStats(allGrads[activeCohort]);
+      buildCountryChips(allGrads[activeCohort]);
+      renderGrads();
+    });
+  });
+
+document.getElementById('gradSearch').addEventListener('input', e => {
+    gradSearch = e.target.value.toLowerCase().trim();
+    currentPage = 1;
+    renderGrads();
+  });
+</script>
+</body>
+</html>

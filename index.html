@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMI — DevOps Micro Internship with Agentic AI by Pravin Mishra</title>
+  <meta name="description" content="A hands-on, mentor-led 14-week program combining DevOps and Agentic AI — deploy real apps, build CI/CD pipelines, and ship a capstone project powered by AI." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 13px 30px;
+      border-radius: 100px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--text);
+      padding: 13px 30px;
+      border-radius: 100px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); background: var(--accent-light); }
+
+    .mentor-section {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mentor-inner {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .mentor-avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      border: 4px solid var(--accent);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--accent);
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(232,160,32,0.25);
+    }
+
+    .mentor-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+
+    .mentor-stats {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+
+    .mentor-stat {
+      text-align: center;
+      background: var(--bg-section);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.6rem 1rem;
+      min-width: 80px;
+    }
+
+    .mentor-stat .val {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--accent);
+      display: block;
+    }
+
+    .mentor-stat .lbl {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .cta-banner {
+      background: var(--accent);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(1.6rem, 3vw, 2.25rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    .cta-banner p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: var(--accent);
+      padding: 13px 30px;
+      border-radius: 100px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+
+    .btn-outline-white {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      padding: 13px 30px;
+      border-radius: 100px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: 2px solid rgba(255,255,255,0.6);
+      transition: background 0.2s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 1.75rem;
+      padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.65rem;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--accent-border);
+    }
+
+    .timeline-item h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      color: var(--text);
+    }
+
+    .timeline-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 640px) {
+      .mentor-inner { flex-direction: column; text-align: center; }
+      .mentor-stats { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="logo-icon">DMI</div>
+    <div>
+      <div class="logo-text">DevOps Micro Internship</div>
+      <div class="logo-sub">by Pravin Mishra</div>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="champion.html">Champion</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="graduates.html">Graduates</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="padding: 5rem 2rem 4rem; background: var(--bg);">
+  <div class="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Cloud · DevOps · Agentic AI · Observability
+    </div>
+    <h1>
+      DevOps Micro Internship<br>
+      <span style="font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:600;color:var(--text-muted);letter-spacing:-0.5px;">with Agentic AI</span>
+    </h1>
+    <p>A hands-on, mentor-led 14-week program where you deploy real apps, create CI/CD pipelines, automate infrastructure, and learn directly from industry mentors.</p>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSel7ai7nyb0P1qLW4vEyfB_nEsD4lUF1XG88vmAaFGBOb6hPA/viewform" target="_blank" rel="noopener" class="btn-primary">Apply for Cohort 3 →</a>
+      <a href="leaderboard.html" class="btn-secondary">View Leaderboard</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="num">5k+</span><span class="label">Learners Trained</span></div>
+      <div class="stat"><span class="num">2</span><span class="label">Cohorts Completed</span></div>
+      <div class="stat"><span class="num">279</span><span class="label">Cohort 2 Students</span></div>
+      <div class="stat"><span class="num">98%</span><span class="label">Satisfaction Rate</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DMI -->
+<section style="padding: 4rem 2rem 5rem; background: var(--bg-section); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">Why DMI</div>
+    <h2 class="section-title">Why This Program <span style="color:var(--accent)">Stands Out</span></h2>
+    <p class="section-sub">Designed for rapid skill acquisition and real-world impact</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Project-First Learning</h3>
+        <p>Weekly deliverables, squad projects, and a final capstone — all mentor-reviewed with real feedback.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧑‍💻</div>
+        <h3>Mentorship & Live Sessions</h3>
+        <p>Every Saturday live session with Pravin Mishra and co-mentors — code reviews, Q&A, and direct feedback to accelerate your growth.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💼</div>
+        <h3>Job-Ready Portfolio</h3>
+        <p>Real-world assignments every week — CI/CD pipelines, cloud deployments, and IaC projects you can demo to any employer.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>Agentic AI + DevOps</h3>
+        <p>We integrate Agentic AI throughout the program. The final capstone project is built entirely around Agentic AI with DevOps — the skill employers are hiring for right now.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📜</div>
+        <h3>Joint Certification</h3>
+        <p>Certificate co-issued by The CloudAdvisory and Pravin Mishra, validating practical DevOps project experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM TIMELINE -->
+<section style="padding: 4rem 2rem 5rem;">
+  <div class="container">
+    <div class="section-label">Curriculum</div>
+    <h2 class="section-title">14-Week <span style="color:var(--accent)">Learning Journey</span></h2>
+    <p class="section-sub">From fundamentals to production DevOps mastery</p>
+    <div class="timeline">
+      <div class="timeline-item"><h4>Week 0 — Intro</h4><p>AI tools, ChatGPT, Networking & VS Code setup</p></div>
+      <div class="timeline-item"><h4>Week 1 — Linux</h4><p>Linux essentials, file systems and shell scripting</p></div>
+      <div class="timeline-item"><h4>Week 2 — Git & GitHub</h4><p>Workflows, PRs, branching strategies</p></div>
+      <div class="timeline-item"><h4>Week 3 — DevOps Lifecycle</h4><p>Builds, tests, and releases</p></div>
+      <div class="timeline-item"><h4>Week 4 — AWS Fundamentals</h4><p>Hands-on labs with core AWS services</p></div>
+      <div class="timeline-item"><h4>Week 5 — AWS Challenge</h4><p>Optimization and real-world scenarios</p></div>
+      <div class="timeline-item"><h4>Week 6 — Azure Basics</h4><p>Azure fundamentals and hybrid-cloud patterns</p></div>
+      <div class="timeline-item"><h4>Week 7 — Terraform</h4><p>Infrastructure as Code best practices & modules</p></div>
+      <div class="timeline-item"><h4>Week 8 — Ansible</h4><p>Configuration management & secrets</p></div>
+      <div class="timeline-item"><h4>Week 9 — Azure DevOps & GitHub Actions</h4><p>CI/CD pipelines end to end</p></div>
+      <div class="timeline-item"><h4>Week 10 — Docker</h4><p>Images, registries, and workflows</p></div>
+      <div class="timeline-item"><h4>Week 11 — Kubernetes</h4><p>Cluster patterns & workloads</p></div>
+      <div class="timeline-item"><h4>Week 12 — Observability</h4><p>Prometheus, Grafana, ELK & SLOs</p></div>
+      <div class="timeline-item"><h4>Week 13 — Final Project + Graduation 🎓</h4><p>Capstone showcase and certificate ceremony</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT MENTOR -->
+<section class="mentor-section" style="padding: 4rem 2rem;">
+  <div class="container">
+    <div class="section-label">Mentor</div>
+    <h2 class="section-title">About The Mentor</h2>
+    <div class="mentor-inner">
+      <div class="mentor-avatar"><img src="images/pravin-mishra.jpg" alt="Pravin Mishra"></div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:0.5rem;">Pravin Mishra</h3>
+        <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.8;margin-bottom:1rem;">
+          Cloud, DevOps, Data & AI Consultant based in Helsinki, Finland. Helping companies modernise their systems, build scalable cloud architectures, and train thousands of professionals globally. Founder of <strong>The CloudAdvisory</strong> and author of 3 published books.
+        </p>
+        <div class="mentor-stats">
+          <div class="mentor-stat"><span class="val">5k+</span><span class="lbl">Learners</span></div>
+          <div class="mentor-stat"><span class="val">20K+</span><span class="lbl">LinkedIn</span></div>
+          <div class="mentor-stat"><span class="val">13K+</span><span class="lbl">YouTube</span></div>
+          <div class="mentor-stat"><span class="val">3</span><span class="lbl">Books</span></div>
+          <div class="mentor-stat"><span class="val">15+</span><span class="lbl">Yrs Exp.</span></div>
+        </div>
+        <div style="margin-top:1.25rem;">
+          <a href="https://pravinmishra.com" target="_blank" rel="noopener" class="btn-primary" style="font-size:0.85rem;padding:9px 20px;">Visit Website →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COHORT 3 CTA BANNER -->
+<div class="cta-banner">
+  <div style="max-width:640px;margin:0 auto;">
+    <p style="font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:0.5rem;">Next Cohort</p>
+    <h2>Cohort 3 Starts June 6, 2026</h2>
+    <p>Applications are open. Join the next batch of DevOps practitioners and build a career-ready portfolio in 14 weeks.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSel7ai7nyb0P1qLW4vEyfB_nEsD4lUF1XG88vmAaFGBOb6hPA/viewform" target="_blank" rel="noopener" class="btn-white">Apply Now →</a>
+      <a href="https://discord.pravinmishra.com/" target="_blank" rel="noopener" class="btn-outline-white">💬 Join the Community</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html" class="footer-logo">
+    <div class="logo-icon">DMI</div>
+    <span style="color:#fff;font-weight:700;font-size:0.95rem;">DevOps Micro Internship</span>
+  </a>
+  <p>by <a href="https://pravinmishra.com" target="_blank">Pravin Mishra</a> &amp; <a href="https://thecloudadvisory.com" target="_blank">The CloudAdvisory</a></p>
+  <p style="margin-top:0.5rem;">hello@thecloudadvisory.com · Helsinki, Finland</p>
+  <p style="margin-top:0.75rem;"><a href="https://discord.pravinmishra.com/" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">💬 Join the DMI Community on Discord →</a></p>
+  <p style="margin-top:1rem; font-size:0.75rem;">&copy; 2026 DevOps Micro Internship. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
