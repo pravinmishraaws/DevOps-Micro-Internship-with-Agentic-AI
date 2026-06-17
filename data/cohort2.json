@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "name": "Odi Chibuzor Greg",
+    "country": "Nigeria",
+    "group": "5",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/gregodi",
+    "photo": "images/gregodi.jpg"
+  },
+  {
+    "name": "Vivian Chiamaka Okose",
+    "country": "Nigeria",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/okosechiamaka/",
+    "photo": "images/vivianchimakaokose.jpg"
+  },
+  {
+    "name": "Solomon Nwachukwu Olungweonwi",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/solomon-olungweonwi-250a913ab",
+    "photo": "images/solomonnwachukwuolungweonwi.jpg"
+  },
+  {
+    "name": "Ntando Mvubu",
+    "country": "South Africa",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/ntandomv",
+    "photo": "images/ntandomvubu.png"
+  },
+  {
+    "name": "Temitayo Ali Awopetu",
+    "country": "Nigeria",
+    "group": "6",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/temitayo-ali-awopetu",
+    "photo": "images/temitayoali.png"
+  },
+  {
+    "name": "Abdulmujib Alade Hashim",
+    "country": "Nigeria",
+    "group": "5",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/abdulmujib-hashim/",
+    "photo": "images/abdulmujibhashim.jpg"
+  }
+]
