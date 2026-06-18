@@ -46,5 +46,53 @@
     "role": "Cloud & DevOps Engineer",
     "linkedin": "https://www.linkedin.com/in/abdulmujib-hashim/",
     "photo": "images/abdulmujibhashim.jpg"
+  },
+  {
+    "name": "Afunogu Stephanie",
+    "country": "Nigeria",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/afunogu",
+    "photo": "images/AfunoguStephanie.png"
+  },
+  {
+    "name": "Nkiruka Obilor",
+    "country": "Nigeria",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/nkiruka-obilor",
+    "photo": "images/NkirukaObilor.jpg"
+  },
+  {
+    "name": "Bola Balogun",
+    "country": "Nigeria",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/bola-balogun-47208231a",
+    "photo": "images/BolaBalogun.jpg"
+  },
+  {
+    "name": "Swaroopa Gajali",
+    "country": "India",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/swaroopa-gajali-806a7033b",
+    "photo": "images/SwaroopaGajali.jpg"
+  },
+  {
+    "name": "Aleke Justin Ekene",
+    "country": "Nigeria",
+    "group": "6",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/justin-aleke-659b52226/",
+    "photo": "images/AlekeJustinEkene.jpg"
+  },
+  {
+    "name": "A.H. Siththi Waseema",
+    "country": "Sri Lanka",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/siththi-waseema-62a0b0187/",
+    "photo": "images/SiththiWaseema.jpg"
   }
 ]
