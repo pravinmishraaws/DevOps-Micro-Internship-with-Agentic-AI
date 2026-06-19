@@ -94,5 +94,53 @@
     "role": "Cloud & DevOps Engineer",
     "linkedin": "https://www.linkedin.com/in/siththi-waseema-62a0b0187/",
     "photo": "images/SiththiWaseema.jpg"
+  },
+  {
+    "name": "Mohana Krishna Dharani Kumar",
+    "country": "India",
+    "group": "6",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/mk-vapt-cloud-security-devops-aws",
+    "photo": "images/MohanaKrishnaDharaniKumar.jpg"
+  },
+  {
+    "name": "Rita Gitamo",
+    "country": "Kenya",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/rita-gitamo/",
+    "photo": "images/RitaGitamo.jpg"
+  },
+  {
+    "name": "Afoma Ebele Egbuonu",
+    "country": "Nigeria",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/afoma-egbuonu-a0304a43",
+    "photo": "images/AfomaEbeleEgbuonu.jpg"
+  },
+  {
+    "name": "Famakinwa Temitope Joseph",
+    "country": "Nigeria",
+    "group": "6",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/famakinwa-temitope-joseph-msc-3090a4136/",
+    "photo": "images/FamakinwaTemitopeJoseph.jpg"
+  },
+  {
+    "name": "Goodness Ojonuba",
+    "country": "Nigeria",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/sy-goodness/",
+    "photo": "images/GoodnessOjonuba.jpg"
+  },
+  {
+    "name": "Ogbonna Nwanneka Mary",
+    "country": "Nigeria",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/mary-nwanneka",
+    "photo": "images/OgbonnaNwannekaMary.jpg"
   }
 ]
