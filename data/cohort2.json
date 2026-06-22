@@ -142,5 +142,53 @@
     "role": "Cloud & DevOps Engineer",
     "linkedin": "https://www.linkedin.com/in/mary-nwanneka",
     "photo": "images/OgbonnaNwannekaMary.jpg"
+  },
+  {
+    "name": "Adesegun Asunmo",
+    "country": "Nigeria",
+    "group": "6",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/adesegunasunmo/",
+    "photo": "images/AdesegunAsunmo.jpg"
+  },
+  {
+    "name": "Aarti Dhanaji Jadhav",
+    "country": "India",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/aarti-jadhav-447bb4327/",
+    "photo": "images/AartiDhanajiJadhav.png"
+  },
+  {
+    "name": "Ugochukwu Stephen Ndubisi",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/ugonwachiukwu",
+    "photo": "images/UgochukwuStephenNdubisi.jpg"
+  },
+  {
+    "name": "Amarachi Nnadi",
+    "country": "Nigeria",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/amarachi-nnadi",
+    "photo": "images/AmarachiNnadi.jpg"
+  },
+  {
+    "name": "Ban Ganesh Vishnu",
+    "country": "India",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/ganesh-ban-538715322/",
+    "photo": "images/BanGaneshVishnu.jpg"
+  },
+  {
+    "name": "Pratyush Pahari",
+    "country": "India",
+    "group": "4",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/paharipratyush/",
+    "photo": "images/PratyushPahari.png"
   }
 ]
