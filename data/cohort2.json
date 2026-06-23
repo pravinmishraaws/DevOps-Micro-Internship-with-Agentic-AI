@@ -190,5 +190,53 @@
     "role": "Cloud & DevOps Engineer",
     "linkedin": "https://www.linkedin.com/in/paharipratyush/",
     "photo": "images/PratyushPahari.png"
+  },
+  {
+    "name": "Jacinta Ezennajiofoeze Chinyere",
+    "country": "Nigeria",
+    "group": "1",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/ezennajiofoeze-jacinta-8b5471103/",
+    "photo": "images/JacintaEzennajiofoezeChinyere.jpg"
+  },
+  {
+    "name": "Love Ogujiofor",
+    "country": "Nigeria",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/love-ogujiofor",
+    "photo": "images/LoveOgujiofor.jpg"
+  },
+  {
+    "name": "Benjamin Akinteye",
+    "country": "Nigeria",
+    "group": "5",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/benjamin-akinteye/",
+    "photo": "images/BenjaminAkinteye.jpg"
+  },
+  {
+    "name": "Olanrewaju Awe",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/olanrewaju-awe-62761758",
+    "photo": ""
+  },
+  {
+    "name": "Varun Gopal",
+    "country": "India",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/varungopal286/",
+    "photo": "images/VarunGopal.jpg"
+  },
+  {
+    "name": "Ebelechukwu Lucy Okafor",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/ebelechukwu-okafor/",
+    "photo": "images/EbelechukwuLucyOkafor.jpg"
   }
 ]
