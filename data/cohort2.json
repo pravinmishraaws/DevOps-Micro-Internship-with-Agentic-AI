@@ -238,5 +238,53 @@
     "role": "Cloud & DevOps Engineer",
     "linkedin": "https://www.linkedin.com/in/ebelechukwu-okafor/",
     "photo": "images/EbelechukwuLucyOkafor.jpg"
+  },
+  {
+    "name": "Stephen Odunze",
+    "country": "UK",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/stephen-odunze411/",
+    "photo": "images/StephenOdunze.jpg"
+  },
+  {
+    "name": "Ihuoma Nkechi Bridget",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/nkechi-ihuoma-bridget",
+    "photo": "images/IhuomaNkechiBridget.jpg"
+  },
+  {
+    "name": "Nkechi Queeneth Ogbuji",
+    "country": "Nigeria",
+    "group": "2",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/nkechiogbuji",
+    "photo": "images/NkechiQueenethOgbuji.jpg"
+  },
+  {
+    "name": "Anumba Chiamaka Maryann",
+    "country": "Italy",
+    "group": "5",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/anumbamaryann",
+    "photo": "images/AnumbaChiamakaMaryann.jpg"
+  },
+  {
+    "name": "Emmanuel Adekiitan",
+    "country": "Nigeria",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/emmanuel-adekiitan-0b0460183",
+    "photo": "images/EmmanuelAdekiitan.jpg"
+  },
+  {
+    "name": "Adegboyega Bamidele Ogunsemoyin",
+    "country": "Nigeria",
+    "group": "3",
+    "role": "Cloud & DevOps Engineer",
+    "linkedin": "https://www.linkedin.com/in/adegboyega-bamidele-ogunsemoyin-085b2316a/",
+    "photo": "images/AdegboyegaBamideleOgunsemoyin.jpg"
   }
 ]
