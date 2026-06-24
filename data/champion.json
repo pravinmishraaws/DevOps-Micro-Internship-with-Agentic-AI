@@ -8,7 +8,7 @@
         { "group": "Group 1", "name": "Joseph Ilashe Benjamin", "score": 144, "comment": "", "linkedin": "https://www.linkedin.com/in/ilashe-joseph-524b90233", "photo": "" },
         { "group": "Group 2", "name": "Manish Gantyala", "score": 146, "comment": "", "linkedin": "https://www.linkedin.com/in/manish-gantyala", "photo": "" },
         { "group": "Group 3", "name": "Chetanatma Pahariya", "score": 147, "comment": "", "linkedin": "https://www.linkedin.com/in/chetanatmapahariya", "photo": "" },
-        { "group": "Group 4", "name": "Swaroopa Gajali", "score": 144, "comment": "", "linkedin": "https://www.linkedin.com/in/swaroopa-g-806a7033b", "photo": "" },
+        { "group": "Group 4", "name": "Swaroopa Gajali", "score": 144, "comment": "", "linkedin": "https://www.linkedin.com/in/swaroopa-g-806a7033b", "photo": "images/SwaroopaGajali.jpg" },
         { "group": "Group 5", "name": "Srinadh Reddy Kamireddy", "score": 145, "comment": "", "linkedin": "https://www.linkedin.com/in/srinadhreddyk", "photo": "" },
         { "group": "Group 6", "name": "Rajrupa Raghavan", "score": 149, "comment": "", "linkedin": "https://www.linkedin.com/in/rajruparaghu", "photo": "" }
       ]
@@ -31,14 +31,14 @@
         { "group": "Group 2", "name": "Ban Ganesh Vishnu", "score": 201, "comment": "", "linkedin": "https://www.linkedin.com/in/ganesh-ban-538715322/", "photo": "" },
         { "group": "Group 3", "name": "Varun Gopal", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/varungopal286", "photo": "" },
         { "group": "Group 4", "name": "Ashu Soni", "score": 203, "comment": "", "linkedin": "https://www.linkedin.com/in/ashu-soni1214/", "photo": "" },
-        { "group": "Group 5", "name": "Odi Chibuzor Greg", "score": 206, "comment": "", "linkedin": "https://www.linkedin.com/in/gregodi", "photo": "" },
+        { "group": "Group 5", "name": "Odi Chibuzor Greg", "score": 206, "comment": "", "linkedin": "https://www.linkedin.com/in/gregodi", "photo": "images/gregodi.jpg" },
         { "group": "Group 6", "name": "Vishal Sanjay Gore", "score": 202, "comment": "", "linkedin": "https://www.linkedin.com/in/vishalgoreq", "photo": "" }
       ]
     },
     {
       "week": 4,
       "champions": [
-        { "group": "Group 1", "name": "Swaroopa Gajali", "score": 199, "comment": "", "linkedin": "https://www.linkedin.com/in/swaroopa-gajali-806a7033b/", "photo": "" },
+        { "group": "Group 1", "name": "Swaroopa Gajali", "score": 199, "comment": "", "linkedin": "https://www.linkedin.com/in/swaroopa-gajali-806a7033b/", "photo": "images/SwaroopaGajali.jpg" },
         { "group": "Group 2", "name": "Olanrewaju Awe", "score": 196, "comment": "", "linkedin": "https://www.linkedin.com/in/olanrewaju-musa-a33a97128", "photo": "" },
         { "group": "Group 3", "name": "Jecinta Elugwu", "score": 198, "comment": "", "linkedin": "https://www.linkedin.com/in/jecinta-elugwu-b80a6a122/", "photo": "" },
         { "group": "Group 4", "name": "Pratyush Pahari", "score": 199, "comment": "", "linkedin": "https://www.linkedin.com/in/paharipratyush", "photo": "" },
@@ -52,7 +52,7 @@
         { "group": "Group 1", "name": "UMA", "score": 228, "comment": "", "linkedin": "https://www.linkedin.com/in/uma-gajula-48b88514/", "photo": "" },
         { "group": "Group 2", "name": "Adetomiwa Temiloluwa Ashaye", "score": 224, "comment": "", "linkedin": "https://www.linkedin.com/in/tomiwa-ashaye/", "photo": "" },
         { "group": "Group 3", "name": "Nicholas Ojinni", "score": 227, "comment": "", "linkedin": "https://www.linkedin.com/in/ojinni-oluwafemi11/", "photo": "" },
-        { "group": "Group 4", "name": "Ogbonna Nwanneka Mary", "score": 226, "comment": "", "linkedin": "https://www.linkedin.com/in/mary-nwanneka/", "photo": "" },
+        { "group": "Group 4", "name": "Ogbonna Nwanneka Mary", "score": 226, "comment": "", "linkedin": "https://www.linkedin.com/in/mary-nwanneka/", "photo": "images/OgbonnaNwannekaMary.jpg" },
         { "group": "Group 5", "name": "Bestman Ugochukwu Afokwalam", "score": 224, "comment": "", "linkedin": "https://www.linkedin.com/in/bestmanugochukwu/", "photo": "" },
         { "group": "Group 6", "name": "Emmanuel Chukwuma Agohukoh", "score": 225, "comment": "", "linkedin": "https://www.linkedin.com/in/agohukohemmanuel/", "photo": "" }
       ]
@@ -74,7 +74,7 @@
         { "group": "Group 1", "name": "OLADAYO AREMU", "score": 279, "comment": "", "linkedin": "https://www.linkedin.com/in/oladayo-aremu-937a4313/", "photo": "" },
         { "group": "Group 2", "name": "Mustapha Nurudeen Olalekan", "score": 276, "comment": "", "linkedin": "https://www.linkedin.com/in/mustapha-nurudeen-55b8ba124/", "photo": "" },
         { "group": "Group 3", "name": "Emmanuel Adekiitan", "score": 280, "comment": "", "linkedin": "https://www.linkedin.com/in/emmanuel-adekiitan-0b0460183/", "photo": "" },
-        { "group": "Group 4", "name": "Afoma Ebele Egbuonu", "score": 271, "comment": "", "linkedin": "https://www.linkedin.com/in/afoma-egbuonu-a0304a43/", "photo": "" },
+        { "group": "Group 4", "name": "Afoma Ebele Egbuonu", "score": 271, "comment": "", "linkedin": "https://www.linkedin.com/in/afoma-egbuonu-a0304a43/", "photo": "images/AfomaEbeleEgbuonu.jpg" },
         { "group": "Group 5", "name": "Obianuju Florence Ohawuchi", "score": 270, "comment": "", "linkedin": "https://www.linkedin.com/in/obianujuflorence-118a26289/", "photo": "" },
         { "group": "Group 6", "name": "Ankit Yadav", "score": 266, "comment": "", "linkedin": "https://www.linkedin.com/in/ankit-yadav-eleven/", "photo": "" }
       ]
@@ -82,23 +82,23 @@
     {
       "week": 10,
       "champions": [
-        { "group": "Group 1", "name": "Afunogu Stephanie", "score": 209, "comment": "", "linkedin": "https://www.linkedin.com/in/afunogu/", "photo": "" },
+        { "group": "Group 1", "name": "Afunogu Stephanie", "score": 209, "comment": "", "linkedin": "https://www.linkedin.com/in/afunogu/", "photo": "images/AfunoguStephanie.png" },
         { "group": "Group 2", "name": "NKECHI QUEENETH OGBUJI", "score": 207, "comment": "", "linkedin": "https://www.linkedin.com/in/nkechiogbuji/", "photo": "" },
         { "group": "Group 3", "name": "Love Chioma Ogujiofor", "score": 209, "comment": "", "linkedin": "https://www.linkedin.com/in/love-ogujiofor/", "photo": "" },
-        { "group": "Group 4", "name": "Goodness Ojonuba", "score": 203, "comment": "", "linkedin": "https://www.linkedin.com/in/sy-goodness/", "photo": "" },
+        { "group": "Group 4", "name": "Goodness Ojonuba", "score": 203, "comment": "", "linkedin": "https://www.linkedin.com/in/sy-goodness/", "photo": "images/GoodnessOjonuba.jpg" },
         { "group": "Group 5", "name": "Dolapo Mohammed", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/mohammed-dolapo-abiola/", "photo": "" },
-        { "group": "Group 6", "name": "Mohana Krishna Dharani Kumar", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/mk-vapt-cloud-security-devops-aws/", "photo": "" }
+        { "group": "Group 6", "name": "Mohana Krishna Dharani Kumar", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/mk-vapt-cloud-security-devops-aws/", "photo": "images/MohanaKrishnaDharaniKumar.jpg" }
       ]
     },
     {
       "week": 12,
       "champions": [
-        { "group": "Group 1", "name": "Rita Gitamo", "score": 209, "comment": "", "linkedin": "https://www.linkedin.com/in/rita-gitamo/", "photo": "" },
+        { "group": "Group 1", "name": "Rita Gitamo", "score": 209, "comment": "", "linkedin": "https://www.linkedin.com/in/rita-gitamo/", "photo": "images/RitaGitamo.jpg" },
         { "group": "Group 2", "name": "Pradeep Kumar Neelaboyina", "score": 202, "comment": "", "linkedin": "https://www.linkedin.com/in/pradeep-neelaboyina/", "photo": "" },
         { "group": "Group 3", "name": "Derek Owusu Bekoe", "score": 208, "comment": "", "linkedin": "https://www.linkedin.com/in/derekowusubekoe/", "photo": "" },
         { "group": "Group 4", "name": "Harini P K", "score": 206, "comment": "", "linkedin": "https://www.linkedin.com/in/harini-pk/?skipRedirect=true", "photo": "" },
         { "group": "Group 5", "name": "Amarachi Ezeonyekwere", "score": 201, "comment": "", "linkedin": "https://www.linkedin.com/in/amarachi-ezeonyekwere/?skipRedirect=true", "photo": "" },
-        { "group": "Group 6", "name": "Famakinwa Temitope Joseph", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/famakinwa-temitope-joseph-msc-3090a4136/", "photo": "" }
+        { "group": "Group 6", "name": "Famakinwa Temitope Joseph", "score": 200, "comment": "", "linkedin": "https://www.linkedin.com/in/famakinwa-temitope-joseph-msc-3090a4136/", "photo": "images/FamakinwaTemitopeJoseph.jpg" }
       ]
     },
     {
